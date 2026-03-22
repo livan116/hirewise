@@ -13,15 +13,15 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <h1 className="text-2xl font-semibold text-gray-900">HireWise</h1>
           <p className="mt-2 text-sm text-gray-500">
-            AI resume screening for Indian tech startups
+            AI resume screening for tech startups
           </p>
         </div>
         <div className="bg-white rounded-xl border border-gray-200 p-8">
           <Auth
             supabaseClient={supabase}
             appearance={{ theme: ThemeSupa }}
-            providers={["google"]}
-            redirectTo={`${process.env.NEXT_PUBLIC_APP_URL}/auth/callback`}
+            providers={[]}
+            redirectTo={`http://localhost:3000/auth/callback`}
           />
         </div>
       </div>
